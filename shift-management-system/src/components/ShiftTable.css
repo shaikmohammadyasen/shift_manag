@@ -1,0 +1,22 @@
+.shift-table {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background: #34495e;
+    color: white;
+  }
+  
