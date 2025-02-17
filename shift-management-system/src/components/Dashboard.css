@@ -1,0 +1,52 @@
+/* src/components/Dashboard.css */
+.dashboard {
+    padding: 20px;
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .stat-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .card-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .charts {
+    margin-top: 30px;
+  }
+  
+  .chart-placeholder {
+    height: 200px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
