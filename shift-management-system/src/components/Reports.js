@@ -39,18 +39,8 @@ const Reports = () => {
             <YAxis />
             <Tooltip />
             <Legend />
-            <Line
-              type="monotone"
-              dataKey="scheduled"
-              stroke="#007bff"
-              name="Scheduled Shifts"
-            />
-            <Line
-              type="monotone"
-              dataKey="completed"
-              stroke="#28a745"
-              name="Completed Shifts"
-            />
+            <Line type="monotone" dataKey="scheduled" stroke="#007bff" name="Scheduled Shifts" />
+            <Line type="monotone" dataKey="completed" stroke="#28a745" name="Completed Shifts" />
           </LineChart>
         </ResponsiveContainer>
       </div>
@@ -65,17 +55,17 @@ const Reports = () => {
               { time: "Afternoon", employees: 10 },
               { time: "Night", employees: 8 },
             ]}
+            barSize={40} // Reduced bar width
           >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="time" />
             <YAxis />
-            <Tooltip />
-            <Legend />
-            <Bar
-              dataKey="employees"
-              fill="#ffc107"
-              name="Employees Scheduled"
+            <Tooltip
+              contentStyle={{ backgroundColor: "#333", color: "#fff", borderRadius: "5px" }}
+              cursor={{ fill: "rgba(255, 193, 7, 0.2)" }}
             />
+            <Legend wrapperStyle={{ fontSize: "0.85rem", textAlign: "center" }} />
+            <Bar dataKey="employees" fill="#ffc107" name="Employees Scheduled" radius={[8, 8, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>
