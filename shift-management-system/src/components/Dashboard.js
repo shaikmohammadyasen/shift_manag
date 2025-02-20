@@ -55,27 +55,23 @@ const Dashboard = () => {
         <table>
           <thead>
             <tr>
+              <th>Shift Type</th>
               <th>Shift Name</th>
-              <th>Start Time</th>
-              <th>End Time</th>
+              <th>Start Date</th>
+              <th>End Date</th>
             </tr>
           </thead>
           <tbody>
             {shifts.map((shift) => (
               <tr key={shift.id}>
+                <td>{shift.type}</td> {/* New Shift Type Column */}
                 <td>{shift.name}</td>
-                <td>{shift.startTime}</td>
-                <td>{shift.endTime}</td>
+                <td>{new Date(shift.startTime).toLocaleDateString()}</td>
+                <td>{new Date(shift.endTime).toLocaleDateString()}</td>
               </tr>
             ))}
           </tbody>
         </table>
-      </div>
-
-      {/* Placeholder for Chart */}
-      <div className="charts">
-        <h3>Upcoming Shift Statistics</h3>
-        <div className="chart-placeholder">[Chart Area]</div>
       </div>
     </div>
   );

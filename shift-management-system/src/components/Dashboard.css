@@ -60,19 +60,5 @@ th, td {
 
 th {
   background-color: #f8f8f8;
-}
-
-/* Charts */
-.charts {
-  margin-top: 30px;
-}
-
-.chart-placeholder {
-  background: #ececec;
-  height: 150px;
-  text-align: center;
-  line-height: 150px;
-  border-radius: 8px;
-  font-size: 16px;
-  color: #666;
+  font-weight: bold;
 }
